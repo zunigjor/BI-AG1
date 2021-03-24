@@ -1,0 +1,36 @@
+Hodnocení:	10.0200
+Max. hodnocení:	1.0000 (bez bonusů)
+
+Hodnotitel: automat
+Program zkompilován
+Test 'Základní test daty bez nákazy': Úspěch
+Dosaženo: 100.00 %, požadováno: 100.00 %
+Max doba běhu: 0.007 s (limit: 2.000 s)
+Celková doba běhu: 0.050 s (limit: 20.000 s)
+Úspěch v závazném testu, hodnocení: 100.00 %
+Test 'Test malými daty': Úspěch
+Dosaženo: 100.00 %, požadováno: 100.00 %
+Max doba běhu: 0.007 s (limit: 2.000 s)
+Celková doba běhu: 0.094 s (limit: 20.000 s)
+Úspěch v bonusovém testu, hodnocení: 300.00 %
+Test 'Test středními daty': Úspěch
+Dosaženo: 100.00 %, požadováno: 100.00 %
+Max doba běhu: 0.203 s (limit: 2.000 s)
+Celková doba běhu: 1.190 s (limit: 20.000 s)
+Využití paměti: 12976 KiB (limit: 55258 KiB)
+Úspěch v bonusovém testu, hodnocení: 200.00 %
+Test 'Test velkými daty se záchrannými místy': Úspěch
+Dosaženo: 100.00 %, požadováno: 100.00 %
+Max doba běhu: 0.228 s (limit: 2.000 s)
+Celková doba běhu: 1.320 s (limit: 20.000 s)
+Využití paměti: 20472 KiB (limit: 55258 KiB)
+Úspěch v bonusovém testu, hodnocení: 167.00 %
+Celkové hodnocení: 1002.00 % (= 1.00 * 3.00 * 2.00 * 1.67)
+Celkové procentní hodnocení: 1002.00 %
+Celkem bodů: 10.02 * 1.00 = 10.02
+
+SW metriky:	
+ 	Celkem	Průměr	Maximum	Jméno funkce
+Funkce:	8	--	--	--
+Řádek kódu:	104	13.00 ± 17.64	49	CUniverse::findPath
+Cyklomatická složitost:	32	4.00 ± 6.00	19	CUniverse::findPath

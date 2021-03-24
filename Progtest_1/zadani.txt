@@ -1,0 +1,102 @@
+Píše se rok 3000 a celý známý vesmír je sužován neznámým virem. Nákaza je natolik nebezpečná, že pandemie koronaviru, která se před takřka 1000 lety ze Země rozšířila do prakticky celého zbytku civilizovaného světa, je v porovnání s ním pouhá chřipečka. Tento virus totiž nejen že hubí všechno živé, ale dokonce, jak ukazuje následující snímek z Hubbleova vesmírného dalekohledu, zachvacuje celé planety.
+
+
+Obrázek 1. Snímek planety napadené neznámým virem
+I přes to, že se na univerzitu sídlící na planetě Ankh-Morpork slétly všechny významné mozky této generace, vývoj vakcíny je stále v bodě nula. Vědcům až do této chvíle chyběl jakýkoliv vzorek této hrozby. Světlo naděje přinesla až odvážná posádka lodi Planet Express, které se tolik potřebný vzorek RNA podařilo získat.
+
+Ještě ovšem není vyhráno! Nákaza se vesmírem rychle rozšiřuje a zásilku je třeba doručit na univerzitu. A to co nejrychleji. Z toho důvodu se velitelka lodi rozhodla loď trochu odlehčit a tankovat na každé zastávce jen minimální množství temné hmoty.
+
+Nyní je třeba dobře naplánovat cestu. Posádka má k dispozici mapu známého vesmíru s vyznačenými aktuálně nakaženými planetami. Pro každou planetu je také známo, na které sousední planety se lze na jednu plnou nádrž dostat. Zastavovat lze i na nakažených planetách. Na takových bude sice posádka schopná doplnit palivo, ovšem krom plné nádrže si odtud odveze i nákazu, která ji celou do pár dní zabije. Všichni na palubě si uvědomují, že jejich život je v porovnání s důležitostí jejich zásilky bezcenný, jsou tedy ochotni pro svůj cíl nasadit život. A také věří, že vědci z univerzity naleznou v krátkém čase protilék, který jim při případné nákaze jejich ubohé životy zachrání.
+
+Nejen lidé, ale i ostatní mimozemšťané, jsou od přírody vynalézaví tvorové. Ihned poté, co se informace o novém viru rozšířila, začali se na některých planetách prodávat experimentální léky, které od nákazy údajně pomohou. I přes pochybnou pověst prodávajících je třeba uznat, že na těchto planetách se virus nikdy nerozšířil. Pro případ nakažení si tedy posádka pro jistotu do mapy zanesla i tato potenciálně záchranná místa.
+
+Vaším úkolem je tedy rozhodnout, zda existuje cesta z planety, na které byl získán vzorek viru, na planetu, kde sídlí univerzita. V případě, že posádka tuto cestu přežije, vypište trasu, kterou se posádka úspěšně dostane do svého cíle. V opačním případě již vesmíru není pomoci a měli byste si užít poslední chvíle strávené se svými blízkými…
+
+Formát vstupu
+Na prvním řádku se nachází dvě čísla: N značící počet planet známého vesmíru a M značící počet vesmírných drah mezi těmito planetami.
+Na druhém se nachází čísla s, t, l, která popořadě značí počáteční planetu, planetu se sídlem univerzity a počet zastavení lodi, které posádka v případě nákazy přežije.
+Třetí řádek obsahuje číslo K značící počet aktuálně nakažených planet. Jestliže je K > 0, potom následuje řádek s K identifikátory takových planet.
+Vstup pokračuje řádkem s právě jedním číslem D, které představuje počet planet, na kterých lze zakoupit experimentální lék a uzdravit se tak z nákazy. Jestliže je D > 0, je tento řádek následován dalším řádkem s D identifikátory těchto planet.
+Na závěr obsahuje vstup M řádků sestávajících ze dvojice x y, 0 ≤ x,y < N, která značí, že mezi planetami x a y se lze přemístit na jednu plnou nádrž.
+Vstup očekávejte vždy validní, jeho formát není třeba zvlášť kontrolovat.
+Počáteční a koncová planeta nebude nikdy součástí množiny nakažených planet či množiny planet, na kterých lze zakoupit lék.
+Žádná z planet, jak vyplývá i ze zadání, není zároveň obou speciálních typů.
+Formát výstupu
+Výstup sestává z jednoho řádku obsahujícího mezerami oddělená čísla planet, které posádka během doručování navštíví. V případě, že nákaza postoupila natolik, že zásilku není možné doručit, vypište -1.
+Cest do cíle může obecně existovat více, testovací prostředí se samo postará o zjištění toho, zda je vámi vypsaná cesta validní.
+Jestliže bude vrácená cesta sestávat z více než max(3D*N, N) planet, bude řešení označeno jako chybné.
+Bodové podmínky
+Pro získání 1 bodu je třeba správně vyřešit instance s K = 0, D = 0 a N ≤ 200000.
+Pro získání 3 bodů je třeba správně vyřešit instance s K ≤ 5, D = 0 a N ≤ 30.
+Pro získání 6 bodů je třeba správně vyřešit instance s K ≤ N - 2, D = 0 a N ≤ 200000.
+Pro získání 10 bodů je třeba správně vyřešit instance K ≤ N - 2, D ≤ 30 a N ≤ 200000.
+Ukázka práce programu
+Ukázkový vstup 1
+5 5
+0 4 1
+0
+0
+0 1
+0 2
+2 4
+1 3
+3 4
+ 
+Ukázkový výstup 1
+0 1 3 4
+Ukázkový vstup 2
+6 6
+0 5 2
+1
+3
+0
+0 1
+1 2
+3 1
+2 3
+3 4
+5 4
+ 
+Ukázkový výstup 2
+0 1 2 3 4 5
+Ukázkový vstup 3
+7 6
+0 5 2
+1
+2
+1
+6
+1 0
+4 3
+4 5
+6 3
+2 3
+2 1
+ 
+Ukázkový výstup 3
+0 1 2 3 6 3 4 5
+Ukázkový vstup 4
+5 4
+0 4 2
+1
+1
+0
+0 1
+1 2
+2 3
+3 4
+ 
+Ukázkový výstup 4
+-1
+Ukázkový vstup 5
+7 6
+2 5 2
+1
+4
+0
+0 2
+1 2
+2 3
+6 4
+4 5
+5 6

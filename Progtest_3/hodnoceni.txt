@@ -1,0 +1,34 @@
+Hodnocení:	6.0000
+Max. hodnocení:	1.0000 (bez bonusů)
+
+Hodnotitel: automat
+Program zkompilován
+Test 'Základní test - jedno spuštění pro jeden vstup': Úspěch
+Dosaženo: 100.00 %, požadováno: 100.00 %
+Max doba běhu: 0.016 s (limit: 2.000 s)
+Celková doba běhu: 0.293 s (limit: 20.000 s)
+Úspěch v závazném testu, hodnocení: 100.00 %
+Test 'Test malými daty': Úspěch
+Dosaženo: 100.00 %, požadováno: 100.00 %
+Max doba běhu: 0.156 s (limit: 4.000 s)
+Celková doba běhu: 1.286 s (limit: 40.000 s)
+Úspěch v závazném testu, hodnocení: 100.00 %
+Test 'Test středními daty': Úspěch
+Dosaženo: 100.00 %, požadováno: 100.00 %
+Max doba běhu: 2.693 s (limit: 4.000 s)
+Celková doba běhu: 11.241 s (limit: 20.000 s)
+Úspěch v bonusovém testu, hodnocení: 600.00 %
+Test 'Test velkými daty': Program překročil přidělenou maximální dobu běhu
+Vyčerpání limitu na celý test, program násilně ukončen po: 8.010 s (limit: 8.000 s)
+Neúspěch v bonusovém testu, hodnocení: Bonus nebude udělen
+Překročení doby běhu
+Celkové hodnocení: 600.00 % (= 1.00 * 1.00 * 6.00)
+Celkové procentní hodnocení: 600.00 %
+Celkem bodů: 6.00 * 1.00 = 6.00
+
+SW metriky:	
+ 	Celkem	Průměr	Maximum	Jméno funkce
+Funkce:	9	--	--	--
+Řádek kódu:	180	20.00 ± 28.50	98	saveTheGalaxy
+Cyklomatická složitost:	48	5.33 ± 6.65	23	saveTheGalaxy
+

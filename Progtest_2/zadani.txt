@@ -1,0 +1,39 @@
+Univerzitní superpočítač
+Jak již to tak v životě bývá, člověk často napne veškeré své síly a schopnosti do nějakého smysluplného úkolu, třeba záchrany veškerého života ve vesmíru, a jeho odměna pak sestává, v tom lepším případě, z dobrého pocitu. Nebudu Tě napínat, i Tvé úsilí, které dovedlo posádku lodi Planet Express i se vzorkem RNA bezpečně na univerzitu, bylo náležitě oceněno. Klíčenkou, jak také jinak.
+
+Když už nic jiného, alespoň se nyní můžeš vrátit zpět ke svému výzkumu. Ten je Tvému srdci beztak mnohem bližší než osud lidstva. V posledních týdnech, ještě před vypuknutím celého tohoto šílenství, jsi pracovala na projektu, který je podle Tvého názoru nejen dizertabilní, a mohl by tak konečně po letech posunout Tvou kariéru, ale má potenciál kompletně změnit chápání celého oboru.
+
+Problém je, že k dokončení projektu potřebuješ provést několik posledních simulací sestávajících zejména z řazení obrovského množství čísel. Celý univerzitní superpočítač Supernova je ovšem momentálně vytížen analýzou dovezeného vzorku RNA a jeho správce odmítá se s Tebou byť jen bavit. Jelikož doba, kdy budeš mít opět k dispozici nějaký rozumný stroj, je ve hvězdách, rozhodl ses vrátit se do dřevních dob, kdy "640 kB muselo stačit každému" a dokončit výpočty s tou trochou paměti a procesorového času, které Ti garantuje Tvá kancelář v nejhlubších sklepeních univerzity.
+
+Uvaříš si tedy další hrnek černého čaje, posadíš se k počítači a zkoušíš navázat tam, kde jsi minule skončila. Procházíš naposledy otevřené soubory a začínáš si vzpomínat. Poslední, co se Ti podařilo dokončit, byla knihovna pro zjednodušení práce se soubory. A dokonce jsi si dal i tu práci a napsal dokumentaci. Slovy klasika, jako když najdeš.
+
+Poznámky k implementaci
+Výpočet začíná zavoláním Vaší implementace funkce tarant_allegra(), která jako parametr obdrží čísla H, P a M, které představují popořadě ID souboru obsahujícího data k seřazení, ID souboru, ve kterém mají být uložena vzestupně seřazená čísla, a velikost paměťi (haldy) v bytech, kterou máme dostupnou k výpočtu. Je zaručeno, že ID vstupního a výstupního souboru budou 0 a 1 nebo 1 a 0. Navíc platí, že ze souboru H je možné pouze sekvenčně číst a do souboru P je možné pouze sekvenčně zapisovat. Soubor H není možné smazat.
+
+V průběhu výpočtu můžete pomocí připraveného API pracovat s různými pomocnými soubory. Jejich počet je omezen pouze rozsahem datového typu pro určení ID souboru. Nad těmito soubory je možné volat libovolné funkce z poskytnutého API. Můžete se spolehnout na to, že v testovacím prostředí nebude při práci s těmito soubory docházet k žádným chybám krom vyjmenovaných výjimek. V žádném kroku výpočtu nesmí kumulativní velikost pomocných souborů překročit dvojnásobek velikosti vstupního souboru.
+
+Váš program má v různých testech garantovaně různé velikosti operační paměti (halda a zásobník). Při překročení tohoto limitu bude program ukončen a řešení označeno jako chybné.
+
+Pro použití knihovny STL nemá Váš počítač dostatečný výkon.
+
+Rozhraní
+Rozhraní flib.h společně s kostrou prázdného řešení je dostupná ke stáhnutí jako Vzorová data. Výjimky vycházejí z vlastností rozhraní:
+
+Každý soubor může být v jednu chvíli otevřen nejvýše jednou, a to buď pouze pro čtení nebo pouze pro zápis.
+Při otevření souboru se nastaví čtecí či zapisovací lokace na první byt souboru.
+Čtení i zápis probíhají sekvenčně od prvního bytu souboru postupně po další, není možné v souboru skákat.
+Soubor lze smazat pouze pokud není otevřený. Nelze smazat vstupní soubor.
+Každý otevřený soubor zabere 12 bytů paměti na haldě.
+Místo zabrané soubory se počítá zvlášť. Pokud překročíte přidělené místo na soubory, program bude ukončen.
+Váš program bude spuštěn vícekrát po sobě. Nezapomeňte zavřít a smazat dočasné soubory a uvolňovat paměť, jinak se může vyskytnout chyba při následovném spuštění Vašeho algoritmu.
+Čtení a zápis jednotlivých bytů má velikou režii, využijte vhodně buffery.
+Bodové podmínky a paměť
+Pro splnění 'Základního testu' (2b) je třeba správně řadit soubory obsahující 10 ≤ N ≤ 1000 čísel typu int32_t a to za použití nejvýše 2000 bytů na haldě a 1000 bytů na zásobníku.
+
+Pro splnění 'Testu využití lokální paměti' (3.5b) je třeba správně řadit soubory obsahující 10 ≤ N ≤ 3000000 čísel typu int32_t za použití nejvýše 20000000 bytů na haldě a 4000 bytů na zásobníku.
+
+Pro splnění 'Test efektivity práce se soubory' (6b) je třeba správně řadit soubory obsahující 10 ≤ N ≤ 3000000 čísel typu int32_t za použití nejvýše 2000 bytů na haldě a 4000 bytů na zásobníku.
+
+Pro splnění 'Test využití seřazených částí posloupnosti' (10b) je třeba správně řadit soubory obsahující téměř vzestupně seřazenou posloupnost (tj. každý prvek je na indexu, který se liší od jeho pozice v seřazeném poli nejvýše o 100) 10 ≤ N ≤ 3000000 čísel typu int32_t za použití nejvýše 2000 bytů na haldě a 4000 bytů na zásobníku.
+
+Velikost volné haldy je pouze orientační, její opravdová velikost je předána do Vaší implementace jako parametr. Velikost zásobníku nebude menší. Místo pro dočasné soubory je alespoň 2x velikost vstupního souboru.

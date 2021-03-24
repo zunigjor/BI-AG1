@@ -1,0 +1,41 @@
+Hodnocení:	12.5563
+Max. hodnocení:	2.0000 (bez bonusů)
+
+Hodnotitel: automat
+Program zkompilován
+Test 'Základní test - jedno spuštění': Úspěch
+Dosaženo: 100.00 %, požadováno: 100.00 %
+Celková doba běhu: 0.015 s (limit: 2.000 s)
+Využití paměti: 11356 KiB (limit: 17728 KiB)
+Úspěch v závazném testu, hodnocení: 100.00 %
+Test 'Základní test - mnoho spuštění': Úspěch
+Dosaženo: 100.00 %, požadováno: 100.00 %
+Celková doba běhu: 1.067 s (limit: 4.000 s)
+Využití paměti: 11356 KiB (limit: 17730 KiB)
+Úspěch v závazném testu, hodnocení: 100.00 %
+Test 'Test využití lokální paměti': Úspěch
+Dosaženo: 100.00 %, požadováno: 100.00 %
+Celková doba běhu: 3.459 s (limit: 10.000 s)
+Využití paměti: 75168 KiB (limit: 75325 KiB)
+Úspěch v bonusovém testu, hodnocení: 175.00 %
+Test 'Test efektivity práce se soubory': Úspěch
+Dosaženo: 100.00 %, požadováno: 100.00 %
+Celková doba běhu: 3.053 s (limit: 14.000 s)
+Využití paměti: 59044 KiB (limit: 59496 KiB)
+Úspěch v bonusovém testu, hodnocení: 175.00 %
+Test 'Test využití seřazených částí posloupnosti': Úspěch
+Dosaženo: 100.00 %, požadováno: 100.00 %
+Celková doba běhu: 1.270 s (limit: 5.000 s)
+Využití paměti: 58792 KiB (limit: 58931 KiB)
+Úspěch v bonusovém testu, hodnocení: 164.00 %
+Celkové hodnocení: 502.25 % (= 1.00 * 1.00 * 1.75 * 1.75 * 1.64)
+Celkové procentní hodnocení: 502.25 %
+Bonus za včasné odevzdání: 0.50
+Celkem bodů: 5.02 * ( 2.00 + 0.50 ) = 12.56
+
+SW metriky:	
+ 	Celkem	Průměr	Maximum	Jméno funkce
+Funkce:	19	--	--	--
+Řádek kódu:	268	14.11 ± 14.43	56	minheapParkour
+Cyklomatická složitost:	65	3.42 ± 2.78	10	minheapParkour
+
